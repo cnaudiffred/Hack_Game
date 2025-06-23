@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 5px;
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Blinking cursor (optional for style) */
+input::placeholder {
+  color: #00ff00;
+}
